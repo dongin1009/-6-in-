@@ -1,0 +1,24 @@
+GIT
+  버전관리시스템 (ex : 과제.hwp, 과제_제출용.hwp, 과제_진짜제출용.hwp, 과제_발표용.hwp
+  - dropbox : 사업계획서에 GIT 처럼 버전 관리시스템을 일반인도 사용 가능하게)
+ 버전 : 어떠한 작업이 완결된 상태
+명령어
+  pwd : 현재 경로 표시
+  git init : 처음 시작할 때 git을 사용할 곳을 지정
+  mkdir a : a 폴더(경로) 생성
+  vim a.txt : a.txt 파일을 생성한 후 vim에디터로 열기
+  git status : 현재 git 의 상태
+  git add a.txt : a.txt 파일을 git 에 추가
+  git config --global user.name a
+  git config --global user.email a@naver.com
+  : 전체 경로(global)에 사용자 이름과 이메일을 설정 - 작업자가 누구인지 알 수 있다
+  git commit : 변경 메시지
+  git log : 버전 상태
+  cp a.txt b.txt : a.txt의 내용을 b.txt로 복사 또는 생성
+  cat a.txt : a.txt파일을 열기(읽기)
+  *commit 하나에는 하나의 작업만 수정되기를 권장한다.
+  git commit -p : 버전 간의 차이점
+  git diff A(a의 고유 id)..B(b의 고유 id) : add 전과 add 후의 차이. - 작업을 수행했을때 마지막으로 review
+  git commit --help : 'git commit'의 기능, 옵션을 설명해주는 매뉴얼
+  git commit -a : 자동 commit, add 기능
+  git commit -am "First Commit" : (vim 등)에디터를 켜지않고 인라인에서 수정
